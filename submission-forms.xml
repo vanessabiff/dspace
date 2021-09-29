@@ -1338,12 +1338,12 @@
                 <stored-value>Article</stored-value>
             </pair>
             <pair>
-                <displayed-value>Book</displayed-value>
-                <stored-value>Book</stored-value>
+                <displayed-value>Livro</displayed-value>
+                <stored-value>Livro</stored-value>
             </pair>
             <pair>
-                <displayed-value>Book chapter</displayed-value>
-                <stored-value>Book chapter</stored-value>
+                <displayed-value>Capítulo de livro</displayed-value>
+                <stored-value>Capítulo de livro</stored-value>
             </pair>
             <pair>
                 <displayed-value>Dataset</displayed-value>
@@ -1354,8 +1354,8 @@
                 <stored-value>Learning Object</stored-value>
             </pair>
             <pair>
-                <displayed-value>Image</displayed-value>
-                <stored-value>Image</stored-value>
+                <displayed-value>Imagem</displayed-value>
+                <stored-value>Imagem</stored-value>
             </pair>
             <pair>
                 <displayed-value>Image, 3-D</displayed-value>
