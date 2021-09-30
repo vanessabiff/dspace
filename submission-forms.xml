@@ -1329,89 +1329,105 @@
         </value-pairs>
 
         <value-pairs value-pairs-name="common_types" dc-term="type">
-            <pair>
-                <displayed-value>Animation</displayed-value>
-                <stored-value>Animation</stored-value>
+             <pair>
+                <displayed-value>Anais de evento</displayed-value>
+                <stored-value>Anais de evento</stored-value>
             </pair>
             <pair>
-                <displayed-value>Article</displayed-value>
-                <stored-value>Article</stored-value>
+                <displayed-value>Animação</displayed-value>
+                <stored-value>Animação</stored-value>
             </pair>
             <pair>
-                <displayed-value>Livro</displayed-value>
-                <stored-value>Livro</stored-value>
+                <displayed-value>Artigo de evento</displayed-value>
+                <stored-value>Artigo de evento</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Artigo de periódico</displayed-value>
+                <stored-value>Artigo de periódico</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Áudio</displayed-value>
+                <stored-value>Áudio</stored-value>
             </pair>
             <pair>
                 <displayed-value>Capítulo de livro</displayed-value>
                 <stored-value>Capítulo de livro</stored-value>
             </pair>
             <pair>
-                <displayed-value>Dataset</displayed-value>
-                <stored-value>Dataset</stored-value>
+                <displayed-value>Cartilha</displayed-value>
+                <stored-value>Cartilha</stored-value>
             </pair>
             <pair>
-                <displayed-value>Learning Object</displayed-value>
-                <stored-value>Learning Object</stored-value>
+                <displayed-value>Catálogo</displayed-value>
+                <stored-value>Catálogo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Dissertação</displayed-value>
+                <stored-value>Dissertação</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Documentos institucionais</displayed-value>
+                <stored-value>Documentos institucionais</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Guia</displayed-value>
+                <stored-value>Guia</stored-value>
             </pair>
             <pair>
                 <displayed-value>Imagem</displayed-value>
                 <stored-value>Imagem</stored-value>
             </pair>
             <pair>
-                <displayed-value>Image, 3-D</displayed-value>
-                <stored-value>Image, 3-D</stored-value>
+                <displayed-value>Livro</displayed-value>
+                <stored-value>Livro</stored-value>
             </pair>
             <pair>
-                <displayed-value>Map</displayed-value>
-                <stored-value>Map</stored-value>
+                <displayed-value>Manual</displayed-value>
+                <stored-value>Manual</stored-value>
             </pair>
             <pair>
-                <displayed-value>Musical Score</displayed-value>
-                <stored-value>Musical Score</stored-value>
+                <displayed-value>Patente</displayed-value>
+                <stored-value>Patente</stored-value>
             </pair>
             <pair>
-                <displayed-value>Plan or blueprint</displayed-value>
-                <stored-value>Plan or blueprint</stored-value>
+                <displayed-value>Projeto</displayed-value>
+                <stored-value>Projeto</stored-value>
             </pair>
             <pair>
-                <displayed-value>Preprint</displayed-value>
-                <stored-value>Preprint</stored-value>
+                <displayed-value>Recurso interativo</displayed-value>
+                <stored-value>Recurso interativo</stored-value>
             </pair>
             <pair>
-                <displayed-value>Presentation</displayed-value>
-                <stored-value>Presentation</stored-value>
+                <displayed-value>Relatório</displayed-value>
+                <stored-value>Relatório</stored-value>
             </pair>
             <pair>
-                <displayed-value>Recording, acoustical</displayed-value>
-                <stored-value>Recording, acoustical</stored-value>
+                <displayed-value>Sequência didática</displayed-value>
+                <stored-value>Sequência didática</stored-value>
             </pair>
             <pair>
-                <displayed-value>Recording, musical</displayed-value>
-                <stored-value>Recording, musical</stored-value>
+                <displayed-value>Software/Aplicativo</displayed-value>
+                <stored-value>Software/Aplicativo</stored-value>
             </pair>
             <pair>
-                <displayed-value>Recording, oral</displayed-value>
-                <stored-value>Recording, oral</stored-value>
+                <displayed-value>Tese</displayed-value>
+                <stored-value>Tese</stored-value>
             </pair>
             <pair>
-                <displayed-value>Software</displayed-value>
-                <stored-value>Software</stored-value>
+                <displayed-value>Trabalho de conclusão de curso</displayed-value>
+                <stored-value>Trabalho de conclusão de curso</stored-value>
+            </pair>
+             <pair>
+                <displayed-value>Software/Aplicativo</displayed-value>
+                <stored-value>Software/Aplicativo</stored-value>
             </pair>
             <pair>
-                <displayed-value>Technical Report</displayed-value>
-                <stored-value>Technical Report</stored-value>
+                <displayed-value>Tutorial</displayed-value>
+                <stored-value>Tutorial</stored-value>
             </pair>
             <pair>
-                <displayed-value>Thesis</displayed-value>
-                <stored-value>Thesis</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Video</displayed-value>
-                <stored-value>Video</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Working Paper</displayed-value>
-                <stored-value>Working Paper</stored-value>
+                <displayed-value>Vídeo</displayed-value>
+                <stored-value>Vídeo</stored-value>
             </pair>
             <pair>
                 <displayed-value>Other</displayed-value>
@@ -1428,48 +1444,41 @@
                 <stored-value></stored-value>
             </pair>
             <pair>
-                <displayed-value>English (United States)</displayed-value>
+                <displayed-value>Português</displayed-value>
+                <stored-value>pt_BR</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Inglês</displayed-value>
                 <stored-value>en_US</stored-value>
             </pair>
             <pair>
-                <displayed-value>English</displayed-value>
-                <stored-value>en</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Spanish</displayed-value>
+                <displayed-value>Espanhol/displayed-value>
                 <stored-value>es</stored-value>
             </pair>
             <pair>
-                <displayed-value>German</displayed-value>
+                <displayed-value>Alemão</displayed-value>
                 <stored-value>de</stored-value>
             </pair>
             <pair>
-                <displayed-value>French</displayed-value>
+                <displayed-value>Francês</displayed-value>
                 <stored-value>fr</stored-value>
             </pair>
             <pair>
-                <displayed-value>Italian</displayed-value>
+                <displayed-value>Italiano</displayed-value>
                 <stored-value>it</stored-value>
             </pair>
             <pair>
-                <displayed-value>Japanese</displayed-value>
+                <displayed-value>Japonês</displayed-value>
                 <stored-value>ja</stored-value>
             </pair>
             <pair>
-                <displayed-value>Chinese</displayed-value>
+                <displayed-value>Chinês</displayed-value>
                 <stored-value>zh</stored-value>
             </pair>
-            <pair>
-                <displayed-value>Portuguese</displayed-value>
-                <stored-value>pt</stored-value>
             </pair>
             <pair>
-                <displayed-value>Turkish</displayed-value>
-                <stored-value>tr</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>(Other)</displayed-value>
-                <stored-value>other</stored-value>
+                <displayed-value>Outro</displayed-value>
+                <stored-value>Outro</stored-value>
             </pair>
         </value-pairs>
 
