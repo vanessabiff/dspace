@@ -233,19 +233,7 @@
                     <required></required>
                 </field>
             </row>
-             <row>
-               <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>rights</dc-element>
-                    <dc-qualifier>type</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Regime de direitos autorais</label>
-                    <input-type>textarea</input-type>
-                    <hint>Insira o regime de direitos autorais.</hint>
-                    <required></required>
-                </field>
-            </row>
-        </form>
+              </form>
 
     <!-- Formulário padrão para uso em coleções de TCCs -->
         <form name="TCCpageone">
@@ -430,19 +418,7 @@
                     <required></required>
                 </field>
             </row>
-             <row>
-               <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>rights</dc-element>
-                    <dc-qualifier>type</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Regime de direitos autorais</label>
-                    <input-type>textarea</input-type>
-                    <hint>Insira o regime de direitos autorais.</hint>
-                    <required></required>
-                </field>
-            </row>
-        </form>
+           </form>
 
         <!-- Form which defines the *first* metadata page/section for depositing Publication Entities.
              Since Publication Entities are very similar to normal Items, this is nearly identical to the
@@ -1747,6 +1723,7 @@
             </pair>
         </value-pairs>
 
+                       
         <!-- OpenAIRE specific value pairs -->
 
         <value-pairs value-pairs-name="openaire_license_types" dc-term="license">
