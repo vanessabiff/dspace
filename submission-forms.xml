@@ -31,8 +31,8 @@
                     <repeatable>false</repeatable>
                     <label>Titulo</label>
                     <input-type>onebox</input-type>
-                    <hint>Digite o título principal do item.</hint>
-                    <required>You must enter a name for this file</required>
+                    <hint>Digite o título principal do arquivo.</hint>
+                    <required>Você deve inserir um título para este arquivo.</required>
                 </field>
             </row>
             <row>
@@ -40,9 +40,9 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <repeatable>true</repeatable>
-                    <label>Description</label>
+                    <label>Descrição</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter a description for the file</hint>
+                    <hint>Insira uma descrição para o arquivo.</hint>
                     <required></required>
                 </field>
             </row>
@@ -100,7 +100,8 @@
                     </hint>
                     <required>Você deve inserir pelo menos o ano.</required>
                 </field>
-
+            </row>
+            <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
@@ -110,6 +111,19 @@
                     <style>col-sm-8</style>
                     <input-type>onebox</input-type>
                     <hint>Insira o nome do editor deste item.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+             <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>campus</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Campus</label>
+                    <input-type value-pairs-name="common_campus">dropdown</input-type>
+                    <hint>Selecione o Campus vinculado ao item.
+                    </hint>
                     <required></required>
                 </field>
             </row>
@@ -131,9 +145,9 @@
                     <dc-element>relation</dc-element>
                     <dc-qualifier>ispartofseries</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Series/Report No.</label>
+                    <label>Série/Coleção.</label>
                     <input-type>series</input-type>
-                    <hint>Enter the series and number assigned to this item by your community.</hint>
+                    <hint>Insira a série e ou coleção do item (caso se aplique).</hint>
                     <required></required>
                 </field>
             </row>
@@ -144,11 +158,9 @@
                     <dc-qualifier></dc-qualifier>
                     <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
-                    <label>Identifiers</label>
+                    <label>Identificadores</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-                    <hint>If the item has any identification numbers or codes associated with
-                        it, please enter the types and the actual numbers or codes.
-                    </hint>
+                    <hint>Se o item tiver números ou códigos de identificação associados a ele, insira os tipos e os números ou códigos reais.</hint>
                     <required></required>
                 </field>
             </row>
@@ -158,10 +170,9 @@
                     <dc-element>type</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Type</label>
+                    <label>Tipo</label>
                     <input-type value-pairs-name="common_types">dropdown</input-type>
-                    <hint>Select the type(s) of content of the item. To select more than one value in the list, you may
-                        have to hold down the "CTRL" or "Shift" key.
+                    <hint>Selecione o (s) tipo (s) de conteúdo do item. Para selecionar mais de um valor na lista, você pode manter pressionada a tecla "CTRL" ou "Shift".
                     </hint>
                     <required></required>
                 </field>
@@ -172,11 +183,9 @@
                     <dc-element>language</dc-element>
                     <dc-qualifier>iso</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Language</label>
+                    <label>Idioma</label>
                     <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-                    <hint>Select the language of the main content of the item. If the language does not appear in the
-                        list, please select 'Other'. If the content does not really have a language (for example, if it
-                        is a dataset or an image) please select 'N/A'.
+                    <hint>Selecione o idioma do conteúdo principal do item. Se o idioma não aparecer na lista, selecione 'Outro'. Se o conteúdo não tiver realmente um idioma (por exemplo, se for um conjunto de dados ou uma imagem), selecione 'N / A'.
                     </hint>
                     <required></required>
                 </field>
@@ -193,9 +202,9 @@
                     <dc-qualifier></dc-qualifier>
                     <!-- An input-type of tag MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
-                    <label>Subject Keywords</label>
+                    <label>Assunto</label>
                     <input-type>tag</input-type>
-                    <hint>Enter appropriate subject keywords or phrases.</hint>
+                    <hint>Insira palavras-chave.</hint>
                     <required></required>
                     <vocabulary>srsc</vocabulary>
                 </field>
@@ -208,36 +217,232 @@
                     <repeatable>false</repeatable>
                     <label>Abstract</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter the abstract of the item.</hint>
+                    <hint>Insira o abstract (resumo em inglês) do item.</hint>
                     <required></required>
                 </field>
             </row>
             <row>
-                <field>
+               <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
-                    <dc-qualifier>sponsorship</dc-qualifier>
+                    <dc-qualifier>resumo</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Sponsors</label>
+                    <label>Resumo</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter the names of any sponsors and/or funding codes in the box.</hint>
+                    <hint>Insira o resumo do item.</hint>
                     <required></required>
                 </field>
             </row>
-            <row>
-                <field>
+             <row>
+               <field>
                     <dc-schema>dc</dc-schema>
-                    <dc-element>description</dc-element>
-                    <dc-qualifier></dc-qualifier>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier>type</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Description</label>
+                    <label>Regime de direitos autorais</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter any other description or comments in this box.</hint>
+                    <hint>Insira o regime de direitos autorais.</hint>
                     <required></required>
                 </field>
             </row>
         </form>
 
+    <!-- Formulário padrão para uso em coleções de TCCs -->
+        <form name="TCCpageone">
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Autor(a)</label>
+                    <input-type>onebox</input-type>
+                    <hint>Digite o nome do autor (Sobrenome, Nome próprio).</hint>
+                    <required>Você deve inserir o autor(a) do trabalho.</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Título</label>
+                    <input-type>onebox</input-type>
+                    <hint>Insira o título do trabalho.</hint>
+                    <required>Você deve inserir um título do trabalho.</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier>alternative</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Outros títulos</label>
+                    <input-type>onebox</input-type>
+                    <hint>Se o trabalho tiver títulos alternativos, insira-os aqui.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>advisor</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Orientador(a)</label>
+                    <input-type>onebox</input-type>
+                    <hint>Digite o nome do orientado(a) (Sobrenome, Nome próprio).</hint>
+                    <required>Você deve inserir o orientado(a) do trabalho.</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>issued</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Data de publicação</label>
+                    <style>col-sm-4</style>
+                    <input-type>date</input-type>
+                    <hint>Insira a data de defesa do trabalho.</hint>
+                    <required>Você deve inserir pelo menos o ano.</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>program</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Programa/Curso</label>
+                    <style>col-sm-8</style>
+                    <input-type>onebox</input-type>
+                    <hint>Insira o nome do programa/curso.</hint>
+                    <required>Insira o nome do programa/curso.</required>
+                </field>
+            </row>
+            <row>
+             <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier>campus</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Campus</label>
+                    <input-type value-pairs-name="common_campus">dropdown</input-type>
+                    <hint>Selecione o Campus vinculado ao item.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>citation</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Referência</label>
+                    <input-type>onebox</input-type>
+                    <hint>Digite a referência padrão ABNT deste item. Obs.: Pode ser gerada em https://more.ufsc.br/tese_dissert/inserir_tese_dissert</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Identificadores</label>
+                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+                    <hint>Se o item tiver números ou códigos de identificação associados a ele, insira os tipos e os números ou códigos reais.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Tipo</label>
+                    <input-type value-pairs-name="common_types">dropdown</input-type>
+                    <hint>Selecione o (s) tipo (s) de conteúdo do item. 
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>language</dc-element>
+                    <dc-qualifier>iso</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Idioma</label>
+                    <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+                    <hint>Selecione o idioma do conteúdo principal do item. Se o idioma não aparecer na lista, selecione 'Outro'. Se o conteúdo não tiver realmente um idioma (por exemplo, se for um conjunto de dados ou uma imagem), selecione 'N / A'.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+        </form>
+
+        <!-- Form which defines the second page/section of the "traditional" DSpace submission process,
+             often used when depositing normal Items. -->
+        <form name="TCCpagetwo">
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of tag MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Assunto</label>
+                    <input-type>tag</input-type>
+                    <hint>Insira palavras-chave.</hint>
+                    <required></required>
+                    <vocabulary>srsc</vocabulary>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Abstract</label>
+                    <input-type>textarea</input-type>
+                    <hint>Insira o abstract (resumo em inglês) do item.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+               <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>resumo</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Resumo</label>
+                    <input-type>textarea</input-type>
+                    <hint>Insira o resumo do item.</hint>
+                    <required></required>
+                </field>
+            </row>
+             <row>
+               <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier>type</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Regime de direitos autorais</label>
+                    <input-type>textarea</input-type>
+                    <hint>Insira o regime de direitos autorais.</hint>
+                    <required></required>
+                </field>
+            </row>
+        </form>
 
         <!-- Form which defines the *first* metadata page/section for depositing Publication Entities.
              Since Publication Entities are very similar to normal Items, this is nearly identical to the
@@ -1307,16 +1512,12 @@
                 <stored-value>issn</stored-value>
             </pair>
             <pair>
-                <displayed-value>Other</displayed-value>
-                <stored-value>other</stored-value>
+                <displayed-value>Outro</displayed-value>
+                <stored-value>Outro</stored-value>
             </pair>
             <pair>
-                <displayed-value>ISMN</displayed-value>
-                <stored-value>ismn</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Gov't Doc #</displayed-value>
-                <stored-value>govdoc</stored-value>
+                <displayed-value>DOI</displayed-value>
+                <stored-value>DOI</stored-value>
             </pair>
             <pair>
                 <displayed-value>URI</displayed-value>
@@ -1430,8 +1631,8 @@
                 <stored-value>Vídeo</stored-value>
             </pair>
             <pair>
-                <displayed-value>Other</displayed-value>
-                <stored-value>Other</stored-value>
+                <displayed-value>Outro</displayed-value>
+                <stored-value>Outro</stored-value>
             </pair>
         </value-pairs>
 
@@ -1452,7 +1653,7 @@
                 <stored-value>en_US</stored-value>
             </pair>
             <pair>
-                <displayed-value>Espanhol/displayed-value>
+                <displayed-value>Espanhol</displayed-value>
                 <stored-value>es</stored-value>
             </pair>
             <pair>
@@ -1475,10 +1676,74 @@
                 <displayed-value>Chinês</displayed-value>
                 <stored-value>zh</stored-value>
             </pair>
-            </pair>
             <pair>
                 <displayed-value>Outro</displayed-value>
                 <stored-value>Outro</stored-value>
+            </pair>
+        </value-pairs>
+        
+        <!-- Lista de Campus  -->
+        
+        <value-pairs value-pairs-name="common_campus" dc-term="publisher_campus">
+            <pair>
+                <displayed-value>Reitoria</displayed-value>
+                <stored-value>Reitoria</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Avançado Jaguarão</displayed-value>
+                <stored-value>Campus Avançado Jaguarão</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Avançado Novo Hamburgo</displayed-value>
+                <stored-value>Campus Avançado Novo Hamburgo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Bagé</displayed-value>
+                <stored-value>Campus Bagé</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Camaquã</displayed-value>
+                <stored-value>Campus Camaquã</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Charqueadas</displayed-value>
+                <stored-value>Campus Charqueadas</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Gravataí</displayed-value>
+                <stored-value>Campus Gravataí</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Lajeado</displayed-value>
+                <stored-value>Campus Lajeado</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Passo Fundo</displayed-value>
+                <stored-value>Campus Passo Fundo</stored-value>
+            </pair>
+                <pair>
+                <displayed-value>Campus Pelotas</displayed-value>
+                <stored-value>Campus Pelotas</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Pelotas Visconde da Graça</displayed-value>
+                <stored-value>Campus Pelotas Visconde da Graça</stored-value>
+            </pair>
+             <pair>
+                <displayed-value>Campus Santana do Livramento</displayed-value>
+                <stored-value>Campus Santana do Livramento</stored-value>
+            </pair>
+               <pair>
+                <displayed-value>Campus Sapiranga</displayed-value>
+                <stored-value>Campus Sapiranga</stored-value>
+            </pair>
+             <pair>
+                <displayed-value>Campus Sapucaia do Sul</displayed-value>
+                <stored-value>Campus Sapucaia do Sul</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Campus Venâncio Aires</displayed-value>
+                <stored-value>Campus Venâncio Aires</stored-value>
             </pair>
         </value-pairs>
 
