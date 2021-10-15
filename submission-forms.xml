@@ -1506,6 +1506,96 @@
         </value-pairs>
 
         <value-pairs value-pairs-name="common_types" dc-term="type">
+            <pair>
+                <displayed-value>Animação</displayed-value>
+                <stored-value>Animação</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Artigo</displayed-value>
+                <stored-value>Artigo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Livro</displayed-value>
+                <stored-value>Livro</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Capítulo de livro</displayed-value>
+                <stored-value>Capítulo de livro</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Base de dados</displayed-value>
+                <stored-value>Base de dados</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Objeto de Aprendizagem</displayed-value>
+                <stored-value>Objeto de Aprendizagem</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Imagem</displayed-value>
+                <stored-value>Imagem</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Imagem 3D</displayed-value>
+                <stored-value>Imagem 3D</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mapa</displayed-value>
+                <stored-value>Mapa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Musical Score</displayed-value>
+                <stored-value>Musical Score</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Plan or blueprint</displayed-value>
+                <stored-value>Plan or blueprint</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Preprint</displayed-value>
+                <stored-value>Preprint</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Apresentação</displayed-value>
+                <stored-value>Apresentação</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Recording, acoustical</displayed-value>
+                <stored-value>Recording, acoustical</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Recording, musical</displayed-value>
+                <stored-value>Recording, musical</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Recording, oral</displayed-value>
+                <stored-value>Recording, oral</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Software</displayed-value>
+                <stored-value>Software</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Relatório Técnico</displayed-value>
+                <stored-value>Relatório Técnico</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tese</displayed-value>
+                <stored-value>Tese</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Video</displayed-value>
+                <stored-value>Video</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Working Paper</displayed-value>
+                <stored-value>Working Paper</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Outro</displayed-value>
+                <stored-value>Outro</stored-value>
+            </pair>
+        </value-pairs>
+        <value-pairs value-pairs-name="common_types" dc-term="type">
              <pair>
                 <displayed-value>Anais de evento</displayed-value>
                 <stored-value>Anais de evento</stored-value>
@@ -1615,6 +1705,58 @@
         <!-- default language order: (from dspace 1.2.1)
              "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
           -->
+       
+        <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
+            <pair>
+                <displayed-value>N/A</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Inglês (EUA)</displayed-value>
+                <stored-value>en_US</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Inglês</displayed-value>
+                <stored-value>en</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Espanhol</displayed-value>
+                <stored-value>es</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Alemão</displayed-value>
+                <stored-value>de</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Francês</displayed-value>
+                <stored-value>fr</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Italiano</displayed-value>
+                <stored-value>it</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Japanonês</displayed-value>
+                <stored-value>ja</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Chinês</displayed-value>
+                <stored-value>zh</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Português</displayed-value>
+                <stored-value>pt</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Turco</displayed-value>
+                <stored-value>tr</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>(Outro)</displayed-value>
+                <stored-value>other</stored-value>
+            </pair>
+        </value-pairs>
+        
         <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
             <pair>
                 <displayed-value>N/A</displayed-value>
