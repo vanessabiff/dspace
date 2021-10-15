@@ -1595,7 +1595,7 @@
                 <stored-value>Outro</stored-value>
             </pair>
         </value-pairs>
-        <value-pairs value-pairs-name="common_types" dc-term="type">
+        <value-pairs value-pairs-name="common_types_pt" dc-term="type">
              <pair>
                 <displayed-value>Anais de evento</displayed-value>
                 <stored-value>Anais de evento</stored-value>
@@ -1757,7 +1757,7 @@
             </pair>
         </value-pairs>
         
-        <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
+        <value-pairs value-pairs-name="common_iso_languages_pt" dc-term="language_iso">
             <pair>
                 <displayed-value>N/A</displayed-value>
                 <stored-value></stored-value>
